@@ -1,8 +1,6 @@
 
 #Getting and cleaning data----
-setwd(
-        "C:/Users/Ryall & Stephanie/Desktop/Data scientist course/03 Getting and cleaning data/Assignment/UCI HAR Dataset"
-)
+setwd("Your WD")
 
 #import the subject files
 train_subject <- read.table("train/subject_train.txt",header = FALSE)
@@ -59,7 +57,6 @@ combineddata <- rbind(train,test)
 combineddata <- combineddata[,-2]
 
 #Summarising in a tidy dataset----
-
 library(dplyr)
 Tidydata <- summarise_all(group_by(combineddata,Subject,Activity_label),mean)
 
