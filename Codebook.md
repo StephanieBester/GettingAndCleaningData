@@ -1,5 +1,6 @@
 **Step 1: import the subject files**
-Import the train and test subject files into 2 seperate dataframes. The file names are:
+Import the train and test subject files into 2 seperate dataframes.
+The file names are:
 subject_train.txt
 subject_test.txt
 
